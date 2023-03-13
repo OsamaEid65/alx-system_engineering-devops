@@ -1,0 +1,2 @@
+#!/bin/bash
+find -exec * -type d -name '.js' 
