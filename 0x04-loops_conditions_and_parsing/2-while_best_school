@@ -1,8 +1,9 @@
-#!/usr/bin/env bash
-txt="Best School"
-n=1
-while [ $n -le 10 ]
-do 
-	echo $txt
-	n=$(( $n+1 ))
-done
+
+ string 10 times using while loop 
+
+ i=0
+
+ while [ "$i" -lt 10 ]; do
+	   echo "Best School"
+	     ((i++))
+     done
