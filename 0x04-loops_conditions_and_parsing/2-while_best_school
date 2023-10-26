@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+txt="Best School"
+n=1
+while [ $n -le 10 ]
+do 
+	echo $txt
+	n=$(( $n+1 ))
+done
