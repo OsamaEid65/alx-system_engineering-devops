@@ -1,7 +1,5 @@
-#creat exeute and kill 
-
-exec { 'kill_killmenow_process':
-  command     => 'pkill -f killmenow',  # Use pkill to target the process by name
-  refreshonly => true,                  # Ensure it runs only when notified
+# execute pkill command to kill bashscript file killmenow
+exec { 'pkill':
+  command => 'pkill -9 -f killmenow',
+  path    => ['/usr/bin', '/usr/sbin', '/bin']
 }
-
